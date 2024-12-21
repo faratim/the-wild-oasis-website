@@ -5,9 +5,9 @@ import { getCountries } from "@/app/_lib/data-service";
 async function SelectCountry({ defaultCountry, name, id, className }) {
   // const countries = await getCountries();
   const countries = [
-    { name: "United States", flag: "🇺🇸" },
-    { name: "Canada", flag: "🇨🇦" },
-    { name: "Mexico", flag: "🇲🇽" },
+    { name: "United States", flag: "https://flagcdn.com/w20/us.jpg" },
+    { name: "Canada", flag: "https://flagcdn.com/w20/ca.jpg" },
+    { name: "Mexico", flag: "https://flagcdn.com/w20/mx.jpg" },
   ];
   const flag =
     countries.find((country) => country.name === defaultCountry)?.flag ?? "";
